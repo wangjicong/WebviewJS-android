@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Android html demo</title>
+    <style>
+        button{
+            background: grey;
+            color: darkgreen;
+            width: 100%;
+            font-size: 60px;
+            padding: 10px 0;
+        }
+        h2{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+<button id="myBtn" onclick="window.demo.callAndroid()">js调用android</button>
+<hr>
+<h2 id="content">content</h2>
+</body>
+<script>
+    function test(){
+        var v = document.getElementById("content");
+        v.innerHTML="android调用js";
+    }
+</script>
+</html>
